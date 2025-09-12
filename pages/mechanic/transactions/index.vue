@@ -1,25 +1,10 @@
 <template>
   <div class="min-h-screen bg-gray-50 py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Header with Back Button -->
+      <!-- Header -->
       <div class="mb-8">
-        <div class="flex justify-between items-start">
-          <div>
-            <h1 class="text-3xl font-bold text-gray-900">تراکنش‌ها</h1>
-            <p class="mt-2 text-xl text-gray-600">سلام، {{ mechanicName }}</p>
-          </div>
-          <div class="flex gap-3">
-            <NuxtLink 
-              to="/mechanic"
-              class="inline-flex items-center px-4 py-2 bg-gray-600 text-white text-sm font-medium rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-200"
-            >
-              <svg class="mr-2 w-4 h-4 rtl:ml-2 rtl:mr-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-              </svg>
-              بازگشت به هاب
-            </NuxtLink>
-          </div>
-        </div>
+        <h1 class="text-3xl font-bold text-gray-900">تراکنش‌ها</h1>
+        <p class="mt-2 text-xl text-gray-600">سلام، {{ mechanicName }}</p>
       </div>
 
       <!-- Filters -->

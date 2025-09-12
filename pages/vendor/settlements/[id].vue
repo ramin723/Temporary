@@ -8,21 +8,11 @@
         { label: `#${settlementId}` }
       ]" />
 
-      <!-- Header -->
-      <div class="mb-8">
-        <div class="flex items-center justify-between">
-          <div>
-            <h1 class="text-3xl font-bold text-gray-900">جزئیات تسویه</h1>
-            <p class="mt-2 text-gray-600">شناسه: {{ settlementId }}</p>
-          </div>
-          <NuxtLink 
-            to="/vendor/settlements"
-            class="text-indigo-600 hover:text-indigo-900 text-sm"
-          >
-            ← بازگشت به فهرست
-          </NuxtLink>
+        <!-- Header -->
+        <div class="mb-8">
+          <h1 class="text-3xl font-bold text-gray-900">جزئیات تسویه</h1>
+          <p class="mt-2 text-gray-600">شناسه: {{ settlementId }}</p>
         </div>
-      </div>
 
       <!-- Loading -->
       <div v-if="loading" class="text-center py-12">

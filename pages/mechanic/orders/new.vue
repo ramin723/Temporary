@@ -1,23 +1,10 @@
 <template>
   <div>
     <div class="max-w-2xl mx-auto">
-      <!-- Header with Back Button -->
+      <!-- Header -->
       <div class="mb-6">
-        <div class="flex justify-between items-start">
-          <div>
-            <h1 class="text-3xl font-bold text-gray-900">سفارش جدید</h1>
-            <p class="mt-2 text-gray-600">ایجاد سفارش جدید با QR آنلاین</p>
-          </div>
-          <NuxtLink 
-            to="/mechanic"
-            class="inline-flex items-center px-4 py-2 bg-gray-600 text-white text-sm font-medium rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-200"
-          >
-            <svg class="mr-2 w-4 h-4 rtl:ml-2 rtl:mr-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-            </svg>
-            بازگشت به هاب
-          </NuxtLink>
-        </div>
+        <h1 class="text-3xl font-bold text-gray-900">سفارش جدید</h1>
+        <p class="mt-2 text-gray-600">ایجاد سفارش جدید با QR آنلاین</p>
       </div>
 
       <AppCard title="ساخت سفارش جدید">

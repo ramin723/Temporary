@@ -3,18 +3,8 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Header -->
       <div class="mb-8">
-        <div class="flex items-center justify-between">
-          <div>
-            <h1 class="text-3xl font-bold text-gray-900">جزئیات تسویه</h1>
-            <p class="mt-2 text-gray-600">شناسه: {{ settlementId }}</p>
-          </div>
-          <NuxtLink 
-            to="/mechanic/settlements"
-            class="text-indigo-600 hover:text-indigo-900 text-sm"
-          >
-            ← بازگشت به فهرست
-          </NuxtLink>
-        </div>
+        <h1 class="text-3xl font-bold text-gray-900">جزئیات تسویه</h1>
+        <p class="mt-2 text-gray-600">شناسه: {{ settlementId }}</p>
       </div>
 
       <!-- Loading -->
