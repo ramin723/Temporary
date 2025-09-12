@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Sidebar from '~/components/navigation/Sidebar.vue'
 const { user, hydrated, ensureAuth, logout } = useAuth()
 const { show } = useToast()
 
@@ -25,6 +26,8 @@ watch(user, async (newUser) => {
 
 // State برای منوی کاربری
 const isUserMenuOpen = ref(false)
+// State برای سایدبار
+const isSidebarOpen = ref(false)
 
 // تابع برای بستن منو هنگام کلیک خارج از آن
 function closeUserMenu() {
@@ -50,11 +53,26 @@ async function handleLogout() {
 </script>
 
 <template>
-  <div class="min-h-screen bg-white text-gray-900" @click="closeUserMenu">
+  <div
+    class="min-h-screen bg-white text-gray-900"
+    :class="{ 'sm:pr-64': isSidebarOpen }"
+    @click="closeUserMenu"
+  >
+    <Sidebar :open="isSidebarOpen" @close="isSidebarOpen = false" />
     <header class="border-b bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <div class="font-bold">همکاری</div>
-        
+        <div class="flex items-center gap-3">
+          <button
+            @click.stop="isSidebarOpen = !isSidebarOpen"
+            class="p-2 border rounded-lg hover:bg-gray-50 transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <div class="font-bold">همکاری</div>
+        </div>
+
         <!-- منوی کاربری -->
         <div v-if="user" class="relative">
           <button 

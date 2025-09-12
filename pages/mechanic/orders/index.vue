@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-50 py-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Header with Back Button -->
+        <!-- Header -->
       <div class="mb-8">
         <div class="flex justify-between items-start">
           <div>
@@ -17,15 +17,6 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
               </svg>
               سفارش جدید
-            </NuxtLink>
-            <NuxtLink 
-              to="/mechanic"
-              class="inline-flex items-center px-4 py-2 bg-gray-600 text-white text-sm font-medium rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-200"
-            >
-              <svg class="mr-2 w-4 h-4 rtl:ml-2 rtl:mr-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l6-6m-6 6l6 6"></path>
-              </svg>
-              بازگشت به هاب
             </NuxtLink>
           </div>
         </div>
